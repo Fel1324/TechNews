@@ -4,7 +4,7 @@
 
 > Formação Full-Stack: Avançando no HTML e CSS.
 
-O projeto é uma página de notícias sobre tecnologia que apresenta tópicos como: IA, Robótica, VR Criptomoedas, Impressão 3D, entre outros.
+O projeto é uma página de notícias sobre tecnologia que apresenta tópicos como: IA, Robótica, VR, Criptomoedas, Impressão 3D, entre outros.
 
 
 [🔗 Clique aqui para acessar](https://fel1324.github.io/TechNews/)
