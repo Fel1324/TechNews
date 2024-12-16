@@ -21,6 +21,9 @@ section header{
 }
 
 #featured{
+  grid-template-areas: 
+  "card1 card1 card2 card3"
+  "card1 card1 card4 card5";
   grid-area: featured;
 
   img{
@@ -32,6 +35,26 @@ section header{
     border-radius: .25rem;
     overflow: hidden;
     position: relative;
+
+    &:nth-child(1){
+      grid-area: card1;
+    }
+
+    &:nth-child(2){
+      grid-area: card2;
+    }
+
+    &:nth-child(3){
+      grid-area: card3;
+    }
+
+    &:nth-child(4){
+      grid-area: card4;
+    }
+
+    &:nth-child(5){
+      grid-area: card5;
+    }
 
     &::before{
       content: "";
@@ -113,5 +136,39 @@ aside{
 
   & > div h3{
     margin-top: .5rem;
+  }
+}
+
+@media screen and (max-width: 1190px){
+  #featured{
+    grid-template-areas: 
+    "card1 card1 card2"
+    "card1 card1 card3"
+    "card4 card5 .";
+  }
+}
+
+@media  screen and (max-width: 900px){
+  #featured{
+    grid-template-areas: 
+    "card1 card1"
+    "card1 card1"
+    "card2 card3"
+    "card4 card5";
+  }
+}
+
+@media screen and (max-width: 600px){
+  #featured{
+    grid-template-areas: 
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5";
+
+    & h2.text-2xl{
+      font-size: 1rem;
+    }
   }
 }
