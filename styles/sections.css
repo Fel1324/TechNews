@@ -144,13 +144,28 @@ aside{
   }
 }
 
-@media  screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
+  #more{
+    img{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px){
   #featured{
     grid-template-areas: 
     "card1 card1"
     "card1 card1"
     "card2 card3"
     "card4 card5";
+  }
+}
+
+@media screen and (max-width: 660px){
+  #ai > div article{
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
@@ -165,6 +180,17 @@ aside{
 
     & h2.text-2xl{
       font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 470px){
+  #more > div article{
+    display: flex;
+    flex-direction: column;
+
+    & img{
+      width: 9rem;
     }
   }
 }

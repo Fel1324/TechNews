@@ -72,3 +72,16 @@ main{
   color: var(--text-color-primary);
   box-shadow: 0 .25rem 1rem rgba(2, 6, 23, 0.25);
 }
+
+@media screen and (max-width: 1000px){
+  main{
+    row-gap: 5rem;
+    column-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "featured"
+    "weekly"
+    "ai"
+    "aside"; 
+  }
+}
