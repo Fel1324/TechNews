@@ -84,11 +84,7 @@ section header{
   grid-area: weekly;
 
   & > div{
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  img{
-    max-height: 10rem;
+    grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
   }
 
   figure{
