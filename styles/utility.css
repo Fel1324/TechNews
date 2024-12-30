@@ -33,3 +33,13 @@
 .text-sm{
   font: var(--text-sm);
 }
+
+.desktop-only{
+  display: initial;
+}
+
+@media screen and (width <= 35.625em) {
+  .desktop-only{
+    display: none;
+  }
+}
